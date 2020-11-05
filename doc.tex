@@ -4,10 +4,53 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{svg}
+\usepackage{graphicx}
 
 \begin{document}
 
-\section{Henrik}
+\begin{titlepage}
+\begin{centering}
+\large Syddansk Universitet $|$ IMADA \\
+\today \\
+DM500 | 20. f\\
+
+\vspace{4CM}
+
+\huge{\bf \LaTeX{} og Git } \\
+%\Large{\bf Part 1: RunSimulation}
+
+\vspace{\fill}
+
+\fontsize{14}{19.2} {
+    \selectfont
+    KIAN BANKE LARSEN \vspace{5pt} \\
+    KIM HAAGEN MATHIESEN \vspace{5pt} \\
+    SILAS POCKENDAHL \vspace{5pt} \\
+    \quad
+} \\
+
+\vspace{\fill}
+
+%\includesvg[width=.4\textwidth]{SDU.svg}\\\vspace{.55cm}
+
+\end{centering}
+
+\thispagestyle{empty}
+\end{titlepage}
+
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{15pt}
+\fancyhf{}
+\rhead{\today}
+\lhead{ SDU, DM500}
+\chead{Kian B. L., Kim H. M., Silas. P. C.}
+\cfoot{\thepage\ ud af \pageref{LastPage}}
+
+
 \section{Kim}
 \section{Kian}
 \section{Silas}
@@ -18,7 +61,7 @@ Følgende $\mathbb{R} \rightarrow \mathbb{R}$ funktioner er givet:
 \end{align*}
 \begin{enumerate}[label=\alph*)]
 	\item {
-		Da $f$ ikke er monoton, kan den ikke være bijektiv.
+		Da $f(0)=f(-1)=1$, er $f$ ikke injektiv og dermed ikke bijektiv.
 	}
 	\item {
 		Da $f$ ikke er bijektiv, kan den ikke have en invers.
