@@ -3,12 +3,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[danish]{babel}
 \usepackage{microtype}
+\usepackage{icomma}
 \usepackage{parskip}
 
-% Enumeration and math.
+% Enumeration, tcolorbox and math.
 \usepackage{enumitem} 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{tcolorbox}
+
 
 % Header and lastpage config.
 \usepackage{fancyhdr} 
@@ -144,9 +147,38 @@ Givet universet U, mængden S, samt mængderne A og B: \\
     }          
 \end{enumerate}
 
+\newpage
+\section{Kian}\vspace{-5pt}
+\textit{Reeksamen februar 2015 opgave 2.}
+\begin{tcolorbox}
+a) Hvilke af følgende udsagn er sande?
+\begin{align}
+	&\forall x \in \mathbb{N} \! : \exists y \in \mathbb{N} \! : x < y		\label{eq:1}\\
+	&\forall x \in \mathbb{N} \! : \exists !y \in \mathbb{N} \! : x < y		\label{eq:2}\\
+	&\exists y \in \mathbb{N} \! : \forall x \in \mathbb{N} \! : x < y		\label{eq:3}
+\end{align}
+\end{tcolorbox}\vspace{-5pt}
+I udsagn \eqref{eq:1} hævdes det at der for alle \(x\) tilhørende naturlige tal, skal eksistere et \(y\) tilhørende naturlige tal, hvorved det gælder at \(x\) er mindre end \(y\). Udsagnet er \textbf{sandt}, fordi uanset hvilket tal der vælges fra mængden af naturlige tal, vil det altid være muligt at finde et tal der er større -- skyldes at mængden af naturlige tal er tælleligt uendelig.
 
-\section{Kian}
+Udsagn \eqref{eq:2} hævder det samme som ovenstående, dog tilføjes det at der kun eksistere netop ét \(y\). Jævnfør argumentationen for udsagn \eqref{eq:1}'s sandhed, kan udsagn \eqref{eq:2} kun være \textbf{falskt}, da der vil være uendeligt mange tal der er større end \(x\).
 
+Udsagn \eqref{eq:3} påstår at der eksistere et \(y\) tilhørende naturlige tal, således at alle \(x\) i mængden naturlige tal, medfører at \(x\) er mindre end \(y\). Dette udsagn er \textbf{falskt}, grundet at der ikke findes et største tal i en uendelig stor mængde.
+\begin{tcolorbox}
+b) Angiv negeringen af udsagn \eqref{eq:1} fra spørgsmål a).\\ Negerings-operatoren (\(\neg\)) må ikke indgå i dit udsagn.
+\end{tcolorbox}\vspace{-5pt}
+Negeringen af udsagn \eqref{eq:1} udledes på følgende måde:\vspace{-5pt}
+\begin{align}
+\intertext{Hele udsagnet negeres:}
+	&\neg(\forall x \in \mathbb{N}\! : \exists y \in \mathbb{N}\! : x < y)\\
+\intertext{I henhold til De Morgans love for kvantorer flyttes negeringen ind i parentesen:}
+	&\neg\forall x \in \mathbb{N}\! : \exists y \in \mathbb{N}\! : x < y\\
+	&\exists x \in \mathbb{N}\! : \neg\exists y \in \mathbb{N}\! : x < y\\
+\intertext{Negeringen af sammenligningsoperatoren $<$ er:}
+	&\exists x \in \mathbb{N}\! : \forall y \in \mathbb{N}\! : \neg(x < y)\\
+	&\exists x \in \mathbb{N}\! : \forall y \in \mathbb{N}\! : x \geq y
+\end{align}
+Hermed er udsagnet negeret.
+\newpage
 
 \section{Silas}
 Følgende $\mathbb{R} \rightarrow \mathbb{R}$ funktioner er givet:
@@ -169,4 +201,7 @@ Følgende $\mathbb{R} \rightarrow \mathbb{R}$ funktioner er givet:
 	}
 \end{enumerate}
 
+\newpage
+\section{Git-log}
+\inputminted{bash}{git-log.txt}
 \end{document}
