@@ -1,0 +1,57 @@
+$ git log --stat
+commit 1971076f5c0434a2604f43c04909c9eca3133fab (HEAD -> main)
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Sun Nov 8 19:28:25 2020 +0100
+
+    preamble refinement
+
+ doc.tex | 68 ++++++++++++++++++++++++++++++++++++++++++++++-------------------
+ 1 file changed, 48 insertions(+), 20 deletions(-)
+
+commit 0ac45a55a62b3800be20f48ef871eddfe13240c6
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Sun Nov 8 19:24:39 2020 +0100
+
+    added .gitignore mockup
+
+ .gitignore | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+commit 3a78d484c7f75a131ccda72f514dcb181d2f6437 (origin/main, origin/HEAD)
+Author: kimhaagenmathiesen <kim_mathiesen@msn.com>
+Date:   Sat Nov 7 12:29:09 2020 +0100
+
+    reeksamen 2015 opg. 1 tilføjet
+
+ README.md |   4 +++-
+ doc.pdf   | Bin 0 -> 61702 bytes
+ doc.tex   |  71 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 3 files changed, 72 insertions(+), 3 deletions(-)
+
+commit 97e0fc5c17155b2d0aacab6d551b24e852ed0690
+Author: Silas Pockendahl <silch20@student.sdu.dk>
+Date:   Thu Nov 5 12:34:36 2020 +0100
+
+    Tilføjet forside uden svg
+
+ SDU.svg | 13 +++++++++++++
+ doc.tex | 47 +++++++++++++++++++++++++++++++++++++++++++++--
+ 2 files changed, 58 insertions(+), 2 deletions(-)
+
+commit e9789ad0302a96ee2b8a4caf5e769d4787918b01
+Author: Silas Pockendahl <silch20@student.sdu.dk>
+Date:   Wed Nov 4 15:10:08 2020 +0100
+
+    Første opgave semidone
+
+ doc.tex | 34 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 34 insertions(+)
+
+commit 1b26f653fc4c4c0a0bbdd3c4b21dbd718d411d53
+Author: SilasPC <39376372+SilasPC@users.noreply.github.com>
+Date:   Wed Nov 4 13:10:09 2020 +0100
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
