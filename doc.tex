@@ -1,26 +1,63 @@
+% Document encoding.
 \documentclass[12pt, a4paper]{article}
-
-\usepackage{enumitem}
 \usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage{microtype}
+\usepackage{parskip}
+
+% Enumeration and math.
+\usepackage{enumitem} 
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{fancyhdr}
+
+% Header and lastpage config.
+\usepackage{fancyhdr} 
 \usepackage{lastpage}
-\usepackage{svg}
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{15pt}
+\fancyhf{}
+\rhead{\today}
+\lhead{ SDU, DM500}
+\chead{Kian B. L., Kim H. M., Silas. P. C.}
+\cfoot{\thepage\ ud af \pageref{LastPage}}
+
+% Figures and pictures.
+\usepackage{svg} 
 \usepackage{graphicx}
 
-\begin{document}
+% links, references, \ref{...}, \eqref{...}...
+\usepackage[hidelinks, linktoc=all]{hyperref} 
+\hypersetup{
+    colorlinks = true,
+    linkcolor = blue,
+    citecolor = blue,
+    urlcolor = blue
+}
+\urlstyle{same}
 
+% For including GitLog in bash-style
+% Minted is based on python via pygmintize. Hence python needs to be installed.
+% A way to deal with this is to use listings instead as this is based on TeX.
+\usepackage{minted}
+\setminted[]{breaklines, 
+    breakafter=d,
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    fontsize=\footnotesize,
+    linenos}
+
+\begin{document}
 \begin{titlepage}
 \begin{centering}
 \large Syddansk Universitet $|$ IMADA \\
 \today \\
-DM500 - Studieintroduktion til datalogi | 20. f\\
+DM500 | 20. f\\
 
 \vspace{4CM}
 
-\huge{\bf \LaTeX{} og Git } \\
-%\Large{\bf Part 1: RunSimulation}
+\huge{\bf \LaTeX{} \& Git } \\
 
 \vspace{\fill}
 
@@ -34,25 +71,14 @@ DM500 - Studieintroduktion til datalogi | 20. f\\
 
 \vspace{\fill}
 
-%\includesvg[width=.4\textwidth]{SDU.svg}\\\vspace{.55cm}
+\includesvg[width=.4\textwidth]{SDU.svg}\\\vspace{.55cm} % Install Inkscape and run pdfLaTeX with ``-shell-escape'' option :)
 
 \end{centering}
 
 \thispagestyle{empty}
 \end{titlepage}
 
-\pagestyle{fancy}
-\setlength{\headheight}{15pt}
-\setlength{\headsep}{15pt}
-\fancyhf{}
-\rhead{\today}
-\lhead{ SDU, DM500}
-\chead{Kian B. L., Kim H. M., Silas. P. C.}
-\cfoot{\thepage\ ud af \pageref{LastPage}}
-
-
 \section{Kim}
-
 Givet universet U, mængden S, samt mængderne A og B: \\
     \begin{gather*}
     U = \{1, 2, 3, 4, ..., 15\} \\ 
@@ -120,6 +146,8 @@ Givet universet U, mængden S, samt mængderne A og B: \\
 
 
 \section{Kian}
+
+
 \section{Silas}
 Følgende $\mathbb{R} \rightarrow \mathbb{R}$ funktioner er givet:
 \begin{align*}
