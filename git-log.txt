@@ -1,5 +1,40 @@
-$ git log --stat
-commit 1971076f5c0434a2604f43c04909c9eca3133fab (HEAD -> main)
+commit 09de1d79c55897224c1eb784420bad0230adefc4
+Author: Silas Pockendahl <silch20@student.sdu.dk>
+Date:   Mon Nov 9 14:55:51 2020 +0100
+
+    Rettet opgave nr
+
+ doc.tex | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit f600bab97de19aa774e0ccc415e6642d014f6b52
+Author: Silas Pockendahl <silch20@student.sdu.dk>
+Date:   Mon Nov 9 14:53:18 2020 +0100
+
+    2009 opg. 3
+
+ doc.tex | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 43 insertions(+)
+
+commit 9f8ecb7054d6a40948a4970378f75f325196ad0f
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Sun Nov 8 22:01:35 2020 +0100
+
+    Reeksamen februar 2015 opgave 2
+
+ doc.tex | 43 +++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 39 insertions(+), 4 deletions(-)
+
+commit cdf3e5ebde585ab45986feb60f7d9028c6fe9b91
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Sun Nov 8 21:39:15 2020 +0100
+
+    added git-log file
+
+ git-log.txt | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 57 insertions(+)
+
+commit 1971076f5c0434a2604f43c04909c9eca3133fab
 Author: Kian Banke Larsen <snubikian@gmail.com>
 Date:   Sun Nov 8 19:28:25 2020 +0100
 
@@ -17,7 +52,7 @@ Date:   Sun Nov 8 19:24:39 2020 +0100
  .gitignore | 8 ++++++++
  1 file changed, 8 insertions(+)
 
-commit 3a78d484c7f75a131ccda72f514dcb181d2f6437 (origin/main, origin/HEAD)
+commit 3a78d484c7f75a131ccda72f514dcb181d2f6437
 Author: kimhaagenmathiesen <kim_mathiesen@msn.com>
 Date:   Sat Nov 7 12:29:09 2020 +0100
 
