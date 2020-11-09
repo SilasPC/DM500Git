@@ -1,3 +1,4 @@
+%%%%%%%%%% PREABLE %%%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%% PREABLE %%%%%%%%%%%%%%%%%%%%
 % Document encoding.
 \documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -12,7 +13,6 @@
 \usepackage{amssymb}
 \usepackage{tcolorbox}
 
-
 % Header and lastpage config.
 \usepackage{fancyhdr} 
 \pagestyle{fancy}
@@ -25,12 +25,12 @@
 \cfoot{\thepage\ ud af \pageref{LastPage}}
 \usepackage{lastpage}
 
-\usepackage{tikz}
-\usetikzlibrary{calc} % position og tikz labels
-
-% Figures and pictures.
+% Figures, pictures and tikz.
+% Install Inkscape and run pdfLaTeX with ``-shell-escape'' option (for svg package).
 \usepackage{svg} 
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc} % position og tikz labels
 
 % links, references, \ref{...}, \eqref{...}...
 \usepackage[hidelinks, linktoc=all]{hyperref} 
@@ -44,7 +44,7 @@
 
 % For including GitLog in bash-style
 % Minted is based on python via pygmintize. Hence python needs to be installed.
-% A way to deal with this is to use listings instead as this is based on TeX.
+% A way to deal with this is to use listings instead since this is based on TeX.
 \usepackage{minted}
 \setminted[]{breaklines, 
     breakafter=d,
@@ -54,8 +54,10 @@
     fontsize=\footnotesize,
     linenos}
 
+%%%%%%%%%%%% ACTUAL CONTENT %%%%%%%%%%%% ACTUAL CONTENT %%%%%%%%%%%%%%% ACTUAL CONTENT %%%%%%%%%%%%
+% Titlepage used for clearing page headings and setting page counter to one. This also includes a \newpage when block is closed.
 \begin{document}
-\begin{titlepage}
+\begin{titlepage} 
 \begin{centering}
 \large Syddansk Universitet $|$ IMADA \\
 \today \\
@@ -77,16 +79,14 @@ DM500 | 20. f\\
 
 \vspace{\fill}
 
-\includesvg[width=.4\textwidth]{SDU.svg}\\\vspace{.55cm} % Install Inkscape and run pdfLaTeX with ``-shell-escape'' option :)
-
+\includesvg[width=.4\textwidth]{SDU.svg}\\\vspace{.55cm}
 \end{centering}
+
 \begin{tikzpicture}[overlay,remember picture]
 \node[align=center] at ($(current page.center)+(0,-13.7)$) 
 {
 \textbf{Respektive brugernavne:}\quad kilar20, \quad  kimat08, \quad silch20};
 \end{tikzpicture}
-
-\thispagestyle{empty}
 \end{titlepage}
 
 \section{Kim}

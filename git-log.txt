@@ -1,3 +1,31 @@
+commit b88e513d81b04cdbd677749fbbd10bf52bed11db (HEAD -> main, origin/main, origin/HEAD)
+Merge: 818431f f1daa9c
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Mon Nov 9 23:12:09 2020 +0100
+
+    pdf file
+
+commit 818431f97d7795ad7544cd34f9c8140cf61ba24b
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Mon Nov 9 23:09:25 2020 +0100
+
+    added SDU usernames to titlepage - assignment requirement)
+
+ doc.pdf | Bin 61702 -> 145161 bytes
+ doc.tex |  12 ++++++++++--
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+
+commit f1daa9cde7fa1d40881b04c79230e091ed92d6a1
+Author: Silas Pockendahl <silch20@student.sdu.dk>
+Date:   Mon Nov 9 15:01:38 2020 +0100
+
+    Fixed log
+
+ doc.pdf     | Bin 61702 -> 144562 bytes
+ doc.tex     |   2 +-
+ git-log.txt |  41 ++++++++++++++++++++++++++++++++++++++---
+ 3 files changed, 39 insertions(+), 4 deletions(-)
+
 commit 09de1d79c55897224c1eb784420bad0230adefc4
 Author: Silas Pockendahl <silch20@student.sdu.dk>
 Date:   Mon Nov 9 14:55:51 2020 +0100
