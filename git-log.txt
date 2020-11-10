@@ -1,4 +1,25 @@
-commit b88e513d81b04cdbd677749fbbd10bf52bed11db (HEAD -> main, origin/main, origin/HEAD)
+commit a1a4586d8c114b50b093548da0142e4e4a40188f (HEAD -> main, origin/main, origin/HEAD)
+Author: kimhaagenmathiesen <kim_mathiesen@msn.com>
+Date:   Tue Nov 10 12:05:38 2020 +0100
+
+    new
+
+ doc.pdf | Bin 164699 -> 7387 bytes
+ doc.tex |   9 +++++----
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+
+commit d5ed0ae07452e137b4e8eeae6f1667d5d13bda40
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Mon Nov 9 23:50:45 2020 +0100
+
+    minor changes. End of day.
+
+ doc.pdf     | Bin 162096 -> 164699 bytes
+ doc.tex     |  22 +++++++++++-----------
+ git-log.txt |  28 ++++++++++++++++++++++++++++
+ 3 files changed, 39 insertions(+), 11 deletions(-)
+
+commit b88e513d81b04cdbd677749fbbd10bf52bed11db
 Merge: 818431f f1daa9c
 Author: Kian Banke Larsen <snubikian@gmail.com>
 Date:   Mon Nov 9 23:12:09 2020 +0100
