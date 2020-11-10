@@ -1,4 +1,15 @@
-commit a1a4586d8c114b50b093548da0142e4e4a40188f (HEAD -> main, origin/main, origin/HEAD)
+commit 7ac14a902d804b85ab3737f94dae1526cd291d05 (HEAD -> main, origin/main, origin/HEAD)
+Author: Kian Banke Larsen <snubikian@gmail.com>
+Date:   Tue Nov 10 12:17:12 2020 +0100
+
+    Document ready to turn in.
+
+ doc.pdf     | Bin 7387 -> 164391 bytes
+ doc.tex     |   2 +-
+ git-log.txt |  25 +++++++++++++++++++++++--
+ 3 files changed, 24 insertions(+), 3 deletions(-)
+
+commit a1a4586d8c114b50b093548da0142e4e4a40188f
 Author: kimhaagenmathiesen <kim_mathiesen@msn.com>
 Date:   Tue Nov 10 12:05:38 2020 +0100
 
